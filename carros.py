@@ -10,9 +10,8 @@ class Carro:
         
     @property
     def competidor(self):
-        return '{} da {} ultrapassou'.format(self.piloto, self.equipe)
+        return '{} da {} ultrapassou {} {}'.format(self.piloto, self.equipe, self.piloto, self.equipe)
     
     @property
     def mediaVolta(self):
         self.media = int(self.velocidadeMedia)/int(self.tempoVolta)
-        
